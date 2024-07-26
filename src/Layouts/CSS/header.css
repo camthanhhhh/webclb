@@ -1,0 +1,79 @@
+.header {
+    background-color: #000000;
+    padding: 10px 30px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 50px; /* Điều chỉnh chiều cao logo nếu cần */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly; /* Chia đều khoảng cách các nút */
+    flex: 1; /* Cho phép ul chiếm toàn bộ không gian trống */
+    align-items: center;
+}
+
+
+nav ul li {
+    margin: 0 10px; /* Khoảng cách giữa các nút, có thể điều chỉnh nếu cần */
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: 'Robeaugo Regular', sans-serif; 
+}
+
+nav ul li a:hover {
+    color: #0099ff6f; /* Màu sắc khi di chuột qua */
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    border: 2px solid #000000;
+    border-radius: 25px;
+    padding: 5px 10px;
+    background-color: #fff;
+}
+
+.search-input {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    font-family: 'Robeaugo Regular', sans-serif; /* Sử dụng font Robeaugo Regular */
+    border-radius: 25px;
+    width: 200px;
+    transition: width 0.4s ease-in-out;
+}
+
+.search-input:focus {
+    width: 300px; /* Tăng chiều rộng khi người dùng nhấn vào */
+}
+
+.search-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #ffffff;
+    color: white;
+    cursor: pointer;
+    border-radius: 25px;
+    margin-left: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #000000;
+}

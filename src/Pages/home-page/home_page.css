@@ -1,0 +1,28 @@
+/* Đảm bảo trang chiếm toàn bộ chiều cao */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Đảm bảo div.home chiếm toàn bộ chiều cao và chiều rộng */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh; /* 100% chiều cao của viewport */
+    overflow: hidden;
+    position: relative; /* Đảm bảo vị trí của hình ảnh được điều chỉnh chính xác */
+}
+
+/* Đảm bảo hình ảnh chiếm toàn bộ chiều ngang */
+.home-image {
+    width: 100%;
+    height: auto; /* Đảm bảo hình ảnh chiếm toàn bộ chiều cao */
+    object-fit: cover; /* Đảm bảo hình ảnh bao phủ toàn bộ vùng chứa */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
