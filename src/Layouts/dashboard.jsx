@@ -1,5 +1,5 @@
 
-import { Box, Stack } from "@mui/material";
+import { Box } from "@mui/material";
 
 import Main from "./main";
 // import Footer from "./footer";
@@ -9,6 +9,7 @@ function DashBoardLayout({ children }) {
   return (
     <>
       <Header> </Header>
+
       <Box
         sx={{
           minHeight: 1,
@@ -18,6 +19,7 @@ function DashBoardLayout({ children }) {
       >
         <Main>{children}</Main>
       </Box>
+
       <Footer></Footer>
     </>
   );

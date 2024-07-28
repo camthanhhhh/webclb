@@ -1,4 +1,4 @@
-import { Navigate, Outlet, useRoutes } from "react-router-dom";
+import {Outlet, useRoutes } from "react-router-dom";
 import HomePage from "../Pages/home-page/home_page";
 import DashBoardLayout from "../Layouts/dashboard";
 function Router() {
