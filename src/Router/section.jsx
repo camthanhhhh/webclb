@@ -1,6 +1,9 @@
 import {Outlet, useRoutes } from "react-router-dom";
 import HomePage from "../Pages/home-page/home_page";
 import DashBoardLayout from "../Layouts/dashboard";
+import LoginPage from "../Pages/user/login";
+
+
 function Router() {
   const routes = useRoutes([
     {
@@ -12,7 +15,7 @@ function Router() {
       children: [
         { path :"/", element:  <HomePage></HomePage>},
         { path: "home", element: <HomePage /> },
-        // { path: "history", element: <HistoryPage /> },
+        { path: "login", element: <LoginPage/> },
     
       ],
     },
