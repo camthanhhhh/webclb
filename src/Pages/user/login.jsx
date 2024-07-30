@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './login.css';
-import Button from 'react-bootstrap/Button';
+// import Button from 'react-bootstrap/Button';
 
 const LoginPage = () => {
   const [username, setUsername] = useState('');
@@ -54,7 +54,8 @@ const LoginPage = () => {
         <br />
         {error && <div style={{ color: 'red' }}>{error}</div>}
         <button type="submit">Login</button>
-        <Button variant="link">ForgotPassword?</Button>
+        {/* <Button variant="link">ForgotPassword?</Button> */}
+        <a href = '/forgot-password'>Forgot Password?</a>
         {/* <button type="button" onClick={handleForgotPassword}>
           Quên mật khẩu?
         </button> */}
